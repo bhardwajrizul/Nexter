@@ -139,7 +139,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 *Copyright notice: [I am not offering any license!](https://choosealicense.com/no-permission/) This generally means that you have no permission from the creator of the software to use, modify, or share the software.*
 
-This is a course project, not a software library that could be useful to open source community! You can code your own version by following the course mentioned in the [first section of this readme file](#nexter-a-grid-project). Good luck, and may the fourth be with you! *Pun intended. :see_no_evil: :hear_no_evil: :speak_no_evil:*
+This is a course project, not a software library that could be useful to open source community!
 
 Copyright &copy; 2022 by Rizul Bhardwaj. **All rights reserved.**
 
