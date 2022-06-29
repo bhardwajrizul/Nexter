@@ -1,0 +1,126 @@
+.footer {
+    background-color: $color-secondary;
+    grid-column: full-start / full-end;
+    padding: 8rem;
+
+    .nav {
+        list-style: none;
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        gap: 2rem;
+        // align-items: center;
+
+        &__link:link,
+        &__link:visited {
+            font-size: 1.4rem;
+            color: #fff;
+            text-decoration: none;
+            font-family: $font-display;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 1.5rem;
+            display: block;
+            height: 100%;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            transition: all .2s;
+        }
+
+        &__link:hover,
+        &__link:active  {
+            background-color: rgba(#fff, .05);
+            transform: translateY(-3px);
+        }
+    }
+
+}
+
+.copyright {
+    font-size: 1.4rem;
+    color: $color-grey-light-2;
+    margin-top: 6rem;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: $color-grey-light-2;
+    }
+}
+
+
+
+
+.rainbow-button {
+    text-decoration:none;
+    color:#FFF;
+    position: relative;
+    margin-top: 1rem;
+    &__text {
+        position: absolute;
+        transition: all .3s;
+    }
+    &:hover > &__text {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+}
+.rainbow-button {
+    width:calc(20vw + 6px);
+    height:calc(4rem + 6px);
+    background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
+    border-radius:5px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:uppercase;
+    font-size:inherit;
+    font-weight:inherit;
+    animation:slidebg 1s linear infinite;
+
+}
+
+.rainbow-button:hover {
+    animation: pulsate .8s infinite;
+}
+
+.rainbow-button:after {
+content:"";
+width:20vw;
+height:4rem;
+background-color: $color-secondary;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+  
+@keyframes slidebg {
+to {
+    background-position:20vw;
+}
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+
+    }
+    
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+
+    }
+
+}
