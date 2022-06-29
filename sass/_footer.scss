@@ -49,6 +49,8 @@
     flex-direction: column;
     align-items: center;
 
+
+
     &__link:link,
     &__link:visited {
         text-decoration: none;
@@ -67,6 +69,11 @@
     &__text {
         position: absolute;
         transition: all .3s;
+
+        @media (max-width: 1300px) {
+            font-size: 1.2rem !important;
+        }
+
     }
     &:hover > &__text {
         transform: scale(1.05);
@@ -76,13 +83,15 @@
 .rainbow-button {
     width:calc(20vw + 6px);
     height:calc(4rem + 6px);
+    @media (max-width: $bp-small) {
+        width:calc(50vw + 6px);
+    }
     background-image: linear-gradient(90deg, #00C0FF 0%, #FFCF00 49%, #FC4F4F 80%, #00C0FF 100%);
     border-radius:5px;
     display:flex;
     align-items:center;
     justify-content:center;
     text-transform:uppercase;
-    font-size:inherit;
     font-weight:inherit;
     animation:slidebg 1s linear infinite;
 
@@ -95,18 +104,27 @@
 .rainbow-button:after {
 content:"";
 width:20vw;
+@media (max-width: $bp-small) {
+    width:50vw;
+}
 height:4rem;
 background-color: $color-secondary;
 display:flex;
 align-items:center;
 justify-content:center;
 }
-  
+
 @keyframes slidebg {
-to {
-    background-position:20vw;
+    to {
+        background-position :20vw;
+        @media (max-width: $bp-small) {
+            background-position :50vw;
+        }
+    }
 }
-}
+
+
+
 
 @keyframes pulsate {
     0% {

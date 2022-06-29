@@ -34,9 +34,13 @@
         z-index: 2;
         justify-self: end;
         margin: 1rem;
+
+        &--red {
+            fill: #e31b22dd;
+        }
         
         &:hover {
-            animation: breath .8s infinite;
+            animation: breath .8s ease infinite;
         }
     }
 
