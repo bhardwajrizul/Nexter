@@ -141,7 +141,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 This is a course project, not a software library that could be useful to open source community!
 
-Copyright &copy; 2022 by Rizul Bhardwaj. **All rights reserved.**
+Copyright &copy; 2022 by [Rizul Bhardwaj](https://www.linkedin.com/in/rizul/). **All rights reserved.**
 
 
 ---
